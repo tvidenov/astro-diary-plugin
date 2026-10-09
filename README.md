@@ -38,7 +38,7 @@ The workflows use structured tool results. ChatGPT's interactive workspace, prof
 1. Confirm the signed-in publisher account and Grok Bot eligibility at [the publisher portal](https://cursor.com/marketplace/publish).
 2. Verify the host's OAuth flow, allow only its confirmed callback, and update consent copy to identify the actual client.
 3. Complete public-tool and personal-account tests inside Grok Bot, including denial, reconnect, unknown birth time, and write-scope rejection.
-4. Finalize the package's approved open-source license and confirm compatibility of existing paid service plans with the marketplace's terms.
+4. Confirm compatibility of existing paid service plans with the marketplace's terms. This plugin package is MIT-licensed.
 5. Add approved branding, submit the wrapper repository for review, and verify actual installability in Grok Bot after approval.
 
 ## Privacy, terms, and support
@@ -49,4 +49,6 @@ The workflows use structured tool results. ChatGPT's interactive workspace, prof
 
 ## License
 
-No open-source license has been granted for this preview yet. The license will be finalized before marketplace release. Existing ChatGPT packaging and the website/backend remain separate.
+This plugin package is licensed under the [MIT License](LICENSE).
+
+The license applies only to the files in this plugin repository. It does not license or expose The Astro Diary website/backend source, hosted service, user data, or credentials. Existing ChatGPT packaging remains separate. Access to the hosted service is governed by its own terms and permissions.
