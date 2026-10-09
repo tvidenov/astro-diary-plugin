@@ -1,0 +1,13 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "the-astro-diary",
+  "version": "0.1.0",
+  "description": "Explore calculated astrology charts, lunar rhythms, relationship patterns, and personal timing with your saved Astro Diary profiles.",
+  "author": {
+    "name": "Ideas All Day Ltd",
+    "url": "https://theastrodiary.com"
+  },
+  "homepage": "https://theastrodiary.com",
+  "repository": "https://github.com/tvidenov/astro-diary-plugin",
+  "keywords": ["astrology", "natal-chart", "moon", "relationships", "reflection"]
+}
