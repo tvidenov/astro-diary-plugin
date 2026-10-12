@@ -1,9 +1,12 @@
 {
-  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
   "mcpServers": {
     "astro-diary": {
       "type": "streamable-http",
-      "url": "https://theastrodiary.com/mcp"
+      "url": "https://theastrodiary.com/mcp",
+      "auth": {
+        "CLIENT_ID": "EFAYWhmvCbFuqxTJPeCzBYFqWIRFiuyA",
+        "scopes": ["openid", "offline_access", "astro.profiles.read", "astro.charts.read"]
+      }
     }
   }
 }
