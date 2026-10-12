@@ -20,7 +20,7 @@ The source package is available from this repository, independently of Anthropic
 /plugin install the-astro-diary --marketplace tvidenov/astro-diary-plugin
 ```
 
-The plugin uses the hosted Streamable HTTP MCP server at `https://theastrodiary.com/mcp`. No local program, installation hook, API key, or client secret is bundled.
+The plugin uses the dedicated read-only Streamable HTTP MCP server at `https://theastrodiary.com/mcp/claude`. No local program, installation hook, API key, or client secret is bundled.
 
 Public sky and Moon tools require no Astro Diary account. Personal charts require your own Astro Diary account, saved profiles, and OAuth consent. Feature-specific plan restrictions still apply; installing the free plugin does not unlock a paid service plan.
 
@@ -28,7 +28,9 @@ In Claude chat or Cowork, open the plugin's Connectors tab, add The Astro Diary,
 
 Claude Code loads the remote connection from `.mcp.json`; complete its interactive OAuth login when prompted. Its callback is pinned to `http://localhost:8892/callback`; keep that local port available during login. The client uses PKCE and also accepts Claude's exact web callback. The server limits this client's grant to profile/chart reads and staying connected. Stop if diary-write permission appears.
 
-The shared server also advertises a diary-write tool for other integrations. This Claude client cannot receive its required scope, and these workflows never call it. Skill instructions alone are not the access-control boundary. The plugin does not save diary entries, modify profiles, or schedule routines.
+The Claude endpoint exposes 18 read-only tools. It does not register the diary-write tool, and its embedded workspace hides diary-save controls. OAuth tokens are bound to this dedicated resource; tokens for the shared endpoint cannot be used here. The server enforces these boundaries independently of skill instructions. The plugin does not save diary entries, modify profiles, or schedule routines.
+
+The dedicated endpoint was deployed on October 12, 2026. All 18 tools, PKCE login, token refresh, resource-audience isolation, and unknown-birth-time Moon handling passed protocol-level checks using a separate fictional account. Directory review and refreshed host-level acceptance remain pending; these checks are not an Anthropic approval.
 
 ## Try it
 

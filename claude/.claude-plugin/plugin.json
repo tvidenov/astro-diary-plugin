@@ -1,7 +1,7 @@
 {
   "name": "the-astro-diary",
   "displayName": "The Astro Diary",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Explore your saved astrology charts, reflect on the week ahead, and understand relationship patterns with calculated Astro Diary data.",
   "author": { "name": "Ideas All Day Ltd", "url": "https://theastrodiary.com" },
   "homepage": "https://theastrodiary.com",
