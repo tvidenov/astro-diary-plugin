@@ -26,7 +26,7 @@ Public sky and Moon tools require no Astro Diary account. Personal charts requir
 
 In Claude chat or Cowork, open the plugin's Connectors tab, add The Astro Diary, and connect your account. Until the directory entry is available, add a custom connector with the server URL above, select OAuth/sign in, use public client ID `4fb2f85096ba56a3cc416e53a35cf5e07ce5e0b733f755bf`, and leave the client secret empty. This client ID is a public identifier, not a credential. Sign in only on theastrodiary.com.
 
-Claude Code loads the remote connection from `.mcp.json`; complete its interactive OAuth login when prompted. The client uses PKCE and accepts Claude's exact web callback or a local CLI callback. The server limits this client's grant to profile/chart reads and staying connected. Stop if diary-write permission appears.
+Claude Code loads the remote connection from `.mcp.json`; complete its interactive OAuth login when prompted. Its callback is pinned to `http://localhost:8892/callback`; keep that local port available during login. The client uses PKCE and also accepts Claude's exact web callback. The server limits this client's grant to profile/chart reads and staying connected. Stop if diary-write permission appears.
 
 The shared server also advertises a diary-write tool for other integrations. This Claude client cannot receive its required scope, and these workflows never call it. Skill instructions alone are not the access-control boundary. The plugin does not save diary entries, modify profiles, or schedule routines.
 
