@@ -1,5 +1,7 @@
 # The Astro Diary — Cursor / Grok plugin
 
+For Claude chat, Cowork, and Claude Code, see the separate [Claude package](claude/README.md). Its source distribution is independent of Anthropic directory review. The Cursor/Grok package below is unchanged.
+
 ![The Astro Diary](assets/icon.png)
 
 A Cursor Plugin containing a remote MCP connection and three guided workflows:

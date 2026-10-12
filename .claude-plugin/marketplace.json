@@ -1,0 +1,12 @@
+{
+  "name": "astro-diary",
+  "owner": { "name": "Ideas All Day Ltd" },
+  "metadata": { "description": "Guided astrology reflection workflows using The Astro Diary's hosted MCP tools." },
+  "plugins": [
+    {
+      "name": "the-astro-diary",
+      "source": "./claude",
+      "description": "Explore saved astrology charts, weekly reflections, and relationship patterns with Astro Diary data."
+    }
+  ]
+}

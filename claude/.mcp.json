@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "astro-diary": {
+      "type": "http",
+      "url": "https://theastrodiary.com/mcp",
+      "oauth": {
+        "clientId": "4fb2f85096ba56a3cc416e53a35cf5e07ce5e0b733f755bf",
+        "scopes": "openid offline_access astro.profiles.read astro.charts.read"
+      }
+    }
+  }
+}
