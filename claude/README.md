@@ -2,7 +2,7 @@
 
 Explore calculated astrology data in conversation, with guided workflows for your natal chart, the coming week, and relationships. Interpretations are for reflection, not predictions or professional advice.
 
-This is a pre-release Claude plugin package. An Anthropic directory listing is not yet approved or published.
+This is a Claude directory review candidate. Both the connector and plugin were submitted on October 13, 2026; their last verified statuses were **In review** and **Publish requested** (plugin v0.1.3), respectively. These statuses have not been refreshed for this documentation update on October 15. Public source availability is not directory approval or publication.
 
 ## What it adds
 
@@ -10,7 +10,7 @@ This is a pre-release Claude plugin package. An Anthropic directory listing is n
 - **Weekly reflection:** connect a dated week's personal transit highlights and upcoming events to a focus you choose.
 - **Relationship reflection:** explore synastry, composite charts, or dated relationship weather for two selected saved profiles.
 
-The skills preserve unknown-birth-time limitations, distinguish calculated data from interpretation, and avoid compatibility scores or fixed labels for children. They do not retrieve the website's full Family Guide or every written report.
+The skills preserve unknown-birth-time limitations, distinguish calculated data from interpretation, and avoid compatibility scores or fixed labels for children. Unknown-time natal charts omit the Moon sign, placement, and Moon-dependent aspects; synastry omits contacts involving the unknown-time person's Moon. Some transit tools still return approximate natal Moon contacts, so their precision notes remain essential. These workflows do not retrieve the website's full Family Guide or every written report.
 
 ## Connect
 
@@ -30,7 +30,7 @@ Claude Code loads the remote connection from `.mcp.json`; complete its interacti
 
 The Claude endpoint exposes 18 read-only tools. It does not register the diary-write tool, and its embedded workspace hides diary-save controls. OAuth tokens are bound to this dedicated resource; tokens for the shared endpoint cannot be used here. The server enforces these boundaries independently of skill instructions. The plugin does not save diary entries, modify profiles, or schedule routines.
 
-The dedicated endpoint was deployed on October 12, 2026. All 18 tools, PKCE login, token refresh, resource-audience isolation, and unknown-birth-time Moon handling passed protocol-level checks using a separate fictional account. Directory review and refreshed host-level acceptance remain pending; these checks are not an Anthropic approval.
+The dedicated endpoint was deployed on October 12, 2026. Recorded protocol checks passed all 18 tools, PKCE login, token refresh, resource-audience isolation, and unknown-birth-time Moon handling using a separate fictional account. By October 13, all 17 conversational tools and the interactive workspace had Claude-host evidence; the eighteenth tool, app-only `search_profile_mentions`, was checked with MCP Inspector. This is connector acceptance evidence, not proof that this exact repository package's installed skills have been exercised or that Anthropic has approved it.
 
 ## Try it
 
